@@ -99,12 +99,12 @@ export default defineConfig({
     react(),
     AstroPWA({
       registerType: "autoUpdate",
-      includeAssets: ["favicon.ico", "peter-avatar.jpg"],
+      includeAssets: ["favicon.ico", "avatar.jpg"],
       manifest: {
-        name: "Peter Steinberger",
-        short_name: "steipete",
-        description: "AI-powered tools from Swift roots to web frontiers. Everything I build is open source.",
-        theme_color: "#006cac",
+        name: "Quaresma",
+        short_name: "quaresma",
+        description: "Solo builder making AI tools for small operators that bigger SaaS won't bother with.",
+        theme_color: "#0f172a",
         background_color: "#fdfdfd",
         display: "standalone",
         orientation: "portrait",
@@ -117,13 +117,13 @@ export default defineConfig({
             type: "image/x-icon",
           },
           {
-            src: "peter-avatar.jpg",
+            src: "avatar.jpg",
             sizes: "192x192",
             type: "image/jpeg",
             purpose: "any",
           },
           {
-            src: "peter-avatar.jpg",
+            src: "avatar.jpg",
             sizes: "512x512",
             type: "image/jpeg",
             purpose: "any maskable",

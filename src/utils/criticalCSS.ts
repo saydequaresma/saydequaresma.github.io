@@ -177,36 +177,5 @@ export function getPageCriticalCSS(pagePath: string): string {
     );
   }
 
-  if (pagePath.startsWith("/posts/")) {
-    // Blog post specific critical CSS
-    return (
-      criticalCSS +
-      `
-      /* Article typography */
-      .prose {
-        color: rgb(var(--foreground));
-        max-width: 65ch;
-      }
-      
-      .prose h1 {
-        font-size: 1.875rem;
-        font-weight: 700;
-        line-height: 2.25rem;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-      }
-      
-      /* Code blocks */
-      .prose pre {
-        overflow-x: auto;
-        border-radius: 0.375rem;
-        padding: 1rem;
-        font-size: 0.875rem;
-        line-height: 1.7142857;
-      }
-    `
-    );
-  }
-
   return criticalCSS;
 }
