@@ -20,6 +20,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: withastro/action@v3
+        env:
+          PUBLIC_MAILERLITE_ACCOUNT: ${{ vars.PUBLIC_MAILERLITE_ACCOUNT }}
+          PUBLIC_MAILERLITE_FORM: ${{ vars.PUBLIC_MAILERLITE_FORM }}
         with:
           path: .
 

@@ -1,0 +1,34 @@
+---
+import Footer from "@/components/Footer.astro";
+import Header from "@/components/Header.astro";
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout title="Contacto">
+  <Header />
+  <main id="main-content" class="mx-auto w-full max-w-3xl px-4 pb-4">
+    <section class="pt-10 pb-8 prose">
+      <h1>Contacto</h1>
+
+      <p>
+        Para qualquer assunto — incluindo exercer direitos RGPD sobre dados
+        recolhidos pela <a href="/newsletter">newsletter</a> (acesso, retificação,
+        apagamento, oposição) — usa um dos canais abaixo.
+      </p>
+
+      <h2>Canais</h2>
+      <ul>
+        <li>
+          GitHub: <a href="https://github.com/saydequaresma" rel="noopener">github.com/saydequaresma</a>
+          — abre uma issue em qualquer repo público ou usa o link de email do perfil.
+        </li>
+      </ul>
+
+      <p>
+        Resposta tipicamente em poucos dias úteis. Para pedidos RGPD, o prazo
+        máximo legal é 30 dias.
+      </p>
+    </section>
+  </main>
+  <Footer />
+</Layout>

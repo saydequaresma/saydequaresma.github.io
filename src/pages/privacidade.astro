@@ -1,0 +1,47 @@
+---
+import Footer from "@/components/Footer.astro";
+import Header from "@/components/Header.astro";
+import Layout from "@/layouts/Layout.astro";
+
+// TODO: /contacto criada em paralelo. Não meter email pessoal em texto puro
+// nesta página nem em /contacto — risco de scraping.
+---
+
+<Layout title="Privacidade">
+  <Header />
+  <main id="main-content" class="mx-auto w-full max-w-3xl px-4 pb-4">
+    <section class="pt-10 pb-8 prose">
+      <h1>Privacidade</h1>
+
+      <p>
+        Recolho apenas o teu endereço de email, e só se o submeteres no formulário
+        da newsletter. Uso-o exclusivamente para te enviar a newsletter — nada de
+        partilhas, vendas ou cruzamentos com terceiros.
+      </p>
+
+      <h2>Onde fica guardado</h2>
+      <p>
+        Os emails são armazenados e processados pela MailerLite (Lituânia, UE),
+        que atua como subcontratante de tratamento ao abrigo do RGPD. Detalhes
+        em <a href="https://www.mailerlite.com/legal/privacy-policy" rel="noopener">mailerlite.com/legal/privacy-policy</a>.
+      </p>
+
+      <h2>Os teus direitos</h2>
+      <p>
+        Podes cancelar a subscrição a qualquer momento através do link no fim de
+        cada email — a remoção é imediata. Podes também pedir acesso, retificação
+        ou apagamento dos teus dados em qualquer altura através da página de
+        <a href="/contacto">contacto</a>.
+      </p>
+
+      <h2>Quem sou</h2>
+      <p>
+        Responsável pelo tratamento: Sayd Quaresma. Contacto disponível em
+        <a href="/contacto">/contacto</a>.
+      </p>
+
+      <p><small>Última atualização: 1 de maio de 2026.</small></p>
+    </section>
+  </main>
+  <Footer />
+</Layout>
