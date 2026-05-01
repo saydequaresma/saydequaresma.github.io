@@ -74,6 +74,11 @@ const isActive = (path: string) => {
               About
             </a>
           </li>
+          <li class="col-span-2">
+            <a href="/newsletter" class:list={{ "active-nav": isActive("/newsletter") }}>
+              Newsletter
+            </a>
+          </li>
           {
             SITE.lightAndDarkMode && (
               <li class="col-span-1 flex items-center justify-center">
